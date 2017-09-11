@@ -31,8 +31,10 @@ Sets the speed of the left and right motors. The speed can be a value between `-
 
 # `hal.obstacleSensors.left()`, `hal.obstacleSensors.right()`
 
-Returns the ADC reading from the obstacle sensor. In my case, I only got values between 25 and 45, with a max range of under 10 cms, so it's not great, but it's something. I think that's all you can expect from these crappy obstacle sensors.
+Returns the ADC reading from the obstacle sensor. In my case, I only got values roughly between 25 and 45, with a max range of under 10 cms. So it's not great, but it's something. I think that's all you can expect from these crappy obstacle sensors.
 
 # `hal.on('leftTick', cb)`, `hal.on('rightTick', cb)`
 
 These events are emitted when the wheel encoder detects a 'tick'. Ticks are picked up on both the rising and falling edges of the IR receiver output, so two ticks events are raised per notch of the encoder wheel.
+
+License: MIT
